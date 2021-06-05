@@ -6,11 +6,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(
-    Builder(
-      builder: (BuildContext context) {
-        return MaterialApp(home: Home());
-      },
-    ),
+    MaterialApp(home: Home()),
   );
 }
 
